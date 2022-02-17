@@ -73,8 +73,7 @@ static char *tags[] = {"🔳", "🔳", "🔳", "🔳", "🔳", "🔳", "🔳", "
 static const char *eww[] = {"eww", "open", "eww", NULL};
 static const Launcher launchers[] = {{eww, "" },};
 
-static const int tagschemes[] = {SchemeTag1, SchemeTag2, SchemeTag3, SchemeTag4,
-                                 SchemeTag5};
+static const int tagschemes[] = {SchemeTag1, SchemeTag2, SchemeTag3, SchemeTag4, SchemeTag5};
 
 static const unsigned int ulinepad =
     5; /* horizontal padding between the underline and tag */
