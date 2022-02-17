@@ -28,9 +28,10 @@ https://user-images.githubusercontent.com/59060246/128050994-17f46934-6604-4430-
 # Setup 
 
 ```
-git clone https://github.com/siduck/chadwm --depth 1
-mv chadwm ~/.config
-cd ~/.config/chadwm/chadwm
+git clone https://github.com/RonaldsonBellande/dwm
+sudo apt install build-essential libx11-dev libxinerama-dev sharutils libxft-dev
+mv dwm ~/.config
+cd ~/.config/dwm/dwm
 sudo make install
 ```
 - copy the stuff from fonts folder to your ~/.local/share/fonts 
@@ -56,9 +57,9 @@ touch /usr/share/xsessions/chadwm.desktop
 
 ```
 [Desktop Entry]
-Name=chadwm
-Comment=dwm made beautiful 
-Exec= ~/.config/chadwm/scripts/./autostart 
+Name=dwm
+Comment=dwm made different
+Exec= ~/.config/dwm/scripts/./autostart 
 Type=Application 
 ```
 
@@ -69,7 +70,7 @@ Type=Application
 - You need to recompile dwm after every change you make in its src code 
 
 ```
-cd ~/.config/chadwm/chadwm
+cd ~/.config/dwm/dwm
 rm config.h
 sudo make install
 ```
