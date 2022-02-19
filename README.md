@@ -1,4 +1,4 @@
-# chadwm (Initial look)
+# dwm (Initial look)
 
 <img src="https://github.com/siduck/chadwm/blob/screenshots/screenshots/initial_look.png">
 <img src="https://github.com/siduck/chadwm/blob/screenshots/screenshots/col_layout.png">
@@ -29,6 +29,9 @@ https://user-images.githubusercontent.com/59060246/128050994-17f46934-6604-4430-
 
 ```
 git clone https://github.com/RonaldsonBellande/dwm
+sudo apt-get install -y xbacklight
+sudo apt-get install x11-xserver-utils
+
 sudo apt install build-essential libx11-dev libxinerama-dev sharutils libxft-dev
 mv dwm ~/.config
 cd ~/.config/dwm/dwm
@@ -45,14 +48,14 @@ Run the autostart file from .xinitrc
 ```
 #!/bin/sh
 
-exec ~/.config/chadwm/scripts/./autostart
+exec ~/.config/dwm/scripts/./autostart
 ```
 OR
 
 Create a desktop entry 
 
 ```
-touch /usr/share/xsessions/chadwm.desktop  
+touch /usr/share/xsessions/dwm.desktop  
 ```
 
 ```

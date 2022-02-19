@@ -1,13 +1,5 @@
 #!/bin/sh
 
-# this is just an example!
-# add your autostart stuffs here
 xbacklight -set 5 &
-xmodmap ~/.xmodmap-sid &
-picom &
-xrdb merge ~/.Xresources &
-feh --bg-fill ~/Pictures/universe.png &
-
-# run bar script and dwm ( do not remove this )
-~/.config/dwm/scripts/./bar.sh &
-dwm
+feh --bg-fill /home/ronaldsonbellande-hplaptop/Pictures/universe.png &
+/home/ronaldsonbellande-hplaptop/.config/dwm/scripts/./bar.sh & dwm

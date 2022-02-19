@@ -43,7 +43,10 @@ static const int horizpadtabo = 15;
 static const int scalepreview = 4;
 static int tag_preview = 0; /* 1 means enable, 0 is off */
 
-static const char *fonts[] = { "JetBrainsMono Nerd Font:style:medium:size=10","Material Design Icons-Regular:size=10", };
+static const char *fonts[] = {
+    "JetBrainsMono Nerd Font:style:medium:size=10",
+    "Material Design Icons-Regular:size=10",
+};
 static const int colorfultag =
     1; /* 0 means use SchemeSel for selected non vacant tag */
 
@@ -69,11 +72,15 @@ static const char *colors[][3] = {
 };
 
 /* tagging */
-static char *tags[] = {"🔳", "🔳", "🔳", "🔳", "🔳", "🔳", "🔳", "🔳", "🔳", "🔳", "📁", "🌍"};
+static char *tags[] = {"🔳", "🔳", "🔳", "🔳", "🔳", "🔳", "🔳", "🔳",
+                       "🔳", "🔳", "📁", "🌍"};
 static const char *eww[] = {"eww", "open", "eww", NULL};
-static const Launcher launchers[] = {{eww, "" },};
+static const Launcher launchers[] = {
+    {eww, "" }};
 
-static const int tagschemes[] = {SchemeTag1, SchemeTag2, SchemeTag3, SchemeTag4, SchemeTag5};
+
+static const int tagschemes[] = {SchemeTag1, SchemeTag2, SchemeTag3, SchemeTag4,
+                                 SchemeTag5};
 
 static const unsigned int ulinepad =
     5; /* horizontal padding between the underline and tag */
@@ -89,7 +96,8 @@ static const Rule rules[] = {
      *	WM_CLASS(STRING) = instance, class
      *	WM_NAME(STRING) = title
      */
-    /* class            role       instance    title   tags mask  switchtag  iscentered   isfloating   monitor */
+    /* class            role       instance    title   tags mask  switchtag
+       iscentered   isfloating   monitor */
     {"Gimp", NULL, NULL, 0, 0, 1, -1},
     {"Firefox", NULL, NULL, 12, 0, 0, -1},
     {"Konsole", NULL, NULL, 0 << 10, 0, 0, -1},

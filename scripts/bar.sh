@@ -1,12 +1,9 @@
 #!/bin/dash
 
-# ^c$var^ = fg color
-# ^b$var^ = bg color
-
 interval=0
 
 # load colors
-. ~/.config/chadwm/scripts/bar_themes/onedark
+. /home/ronaldsonbellande-hplaptop/.config/dwm/scripts/bar_themes/onedark
 
 cpu() {
 	cpu_val=$(grep -o "^[^ ]*" /proc/loadavg)
@@ -17,8 +14,6 @@ cpu() {
 
 pkg_updates() {
 	updates=$(doas xbps-install -un | wc -l) # void
-	# updates=$(checkupdates | wc -l)   # arch , needs pacman contrib
-	# updates=$(aptitude search '~U' | wc -l)  # apt (ubuntu,debian etc)
 
 	if [ -z "$updates" ]; then
 		printf "^c$green^  Fully Updated"
@@ -55,9 +50,7 @@ clock() {
 }
 
 while true; do
-
 	[ $interval = 0 ] || [ $(($interval % 3600)) = 0 ] && updates=$(pkg_updates)
 	interval=$((interval + 1))
-
 	sleep 1 && xsetroot -name "$updates $(battery) $(brightness) $(cpu) $(mem) $(wlan) $(clock)"
 done
