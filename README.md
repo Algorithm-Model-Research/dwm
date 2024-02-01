@@ -1,4 +1,4 @@
-# dwm (Initial look)
+# Dark Vibrant Desktop
 
 <img src="https://github.com/siduck/chadwm/blob/screenshots/screenshots/initial_look.png">
 <img src="https://github.com/siduck/chadwm/blob/screenshots/screenshots/col_layout.png">
