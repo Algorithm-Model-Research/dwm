@@ -28,52 +28,42 @@ https://user-images.githubusercontent.com/59060246/128050994-17f46934-6604-4430-
 # Setup 
 
 ```
-git clone https://github.com/RonaldsonBellande/dwm
+git clone https://github.com/RonaldsonBellande/dark-vibrant-desktop
 sudo apt-get install -y xbacklight
 sudo apt-get install x11-xserver-utils
 
 sudo apt install build-essential libx11-dev libxinerama-dev sharutils libxft-dev
-mv dwm ~/.config
-cd ~/.config/dwm/dwm
+mv dark-vibrant-desktop ~/.config
+cd ~/.config/dark-vibrant-desktop/dwm
 sudo make install
 ```
 - copy the stuff from fonts folder to your ~/.local/share/fonts 
 - autostart script in the scripts dir is just an example one so it must be adjusted for your liking!
 
-# Run chadwm
 
-Run the autostart file from .xinitrc
+# Run dark-vibrant-desktop
+
+Run the autostart file from .xinitrc (Not Recommend)
 
 (.xinitrc file)
 ```
 #!/bin/sh
 
-exec ~/.config/dwm/scripts/./autostart
-```
-OR
-
-Create a desktop entry 
-
-```
-touch /usr/share/xsessions/dwm.desktop  
+exec ~/.config/dark-vibrant-desktop/scripts/./autostart
 ```
 
-```
-[Desktop Entry]
-Name=dwm
-Comment=dwm made different
-Exec= ~/.config/dwm/scripts/./autostart 
-Type=Application 
-```
+Create a desktop entry (Recommanded)
 
-- [wallpaper](https://github.com/siduck/chadwm/blob/screenshots/screenshots/chad.png)
+```
+cp scripts/dark-vibrant-desktop.desktop /usr/share/xsessions/
+```
 
 # Recompile 
 
 - You need to recompile dwm after every change you make in its src code 
 
 ```
-cd ~/.config/dwm/dwm
+cd ~/.config/dark-vibrant-desktop/dwm
 rm config.h
 sudo make install
 ```
