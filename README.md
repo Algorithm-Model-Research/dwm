@@ -28,34 +28,7 @@ https://user-images.githubusercontent.com/59060246/128050994-17f46934-6604-4430-
 # Setup 
 
 ```
-git clone https://github.com/RonaldsonBellande/dark-vibrant-desktop
-sudo apt-get install -y xbacklight
-sudo apt-get install x11-xserver-utils
-
-sudo apt install build-essential libx11-dev libxinerama-dev sharutils libxft-dev
-mv dark-vibrant-desktop ~/.config
-cd ~/.config/dark-vibrant-desktop/dwm
-sudo make install
-```
-- copy the stuff from fonts folder to your ~/.local/share/fonts 
-- autostart script in the scripts dir is just an example one so it must be adjusted for your liking!
-
-
-# Run dark-vibrant-desktop
-
-Run the autostart file from .xinitrc (Not Recommend)
-
-(.xinitrc file)
-```
-#!/bin/sh
-
-exec ~/.config/dark-vibrant-desktop/scripts/./autostart
-```
-
-Create a desktop entry (Recommanded)
-
-```
-cp scripts/dark-vibrant-desktop.desktop /usr/share/xsessions/
+Run setup.sh
 ```
 
 # Recompile 
@@ -76,9 +49,7 @@ sudo make install
 
 # Credits 
 
-- HUGE THANKS to [eProTaLT83](https://www.reddit.com/user/eProTaLT83). I wanted certain features in dwm like tabbar in monocle , tagpreview etc and he implemented my ideas and created patches for me! I cant even count the number of times he has helped me :v 
-- @fitrh helped with [colorful tag patch](https://github.com/fitrh/dwm/issues/1)
-- [6gk](https://github.com/6gk/fet.sh), eww's pure posix fetch functions taken from here
+- Credit to [siduck](https://github.com/siduck/chadwm)
 
 # Patches
 

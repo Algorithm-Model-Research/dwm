@@ -3,7 +3,7 @@
 interval=0
 
 # load colors
-. /home/ronaldsonbellande-hplaptop/.config/dwm/scripts/bar_themes/onedark
+. ~/.config/dark-vibrant-color/scripts/bar_themes/onedark
 
 cpu() {
 	cpu_val=$(grep -o "^[^ ]*" /proc/loadavg)
