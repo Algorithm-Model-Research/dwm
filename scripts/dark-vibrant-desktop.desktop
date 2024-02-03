@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=Dark-Vibrant-Desktop
-Comment=Dark-Vibrant-Desktop of DWM
-Exec= ~/.config/dark-vibrant-desktop/scripts/./autostart
-Type=Application
