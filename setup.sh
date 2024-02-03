@@ -6,4 +6,4 @@ cp ../dark-vibrant-desktop ~/.config/ &&
 cp ~/.config/dark-vibrant-desktop/scripts/dark-vibrant-desktop.desktop /usr/share/xsessions/ &&
 cp ~/.config/dark-vibrant-desktop/fronts/ ~/.local/share/fonts && 
 cd ~/.config/dark-vibrant-desktop/dwm &&
-sudo make install &&
+sudo make install
