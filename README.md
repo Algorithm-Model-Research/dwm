@@ -28,7 +28,7 @@ https://user-images.githubusercontent.com/59060246/128050994-17f46934-6604-4430-
 # Setup 
 
 ```
-Run setup.sh
+RUN setup.sh
 ```
 
 # Recompile 
@@ -36,9 +36,7 @@ Run setup.sh
 - You need to recompile dwm after every change you make in its src code 
 
 ```
-cd ~/.config/dark-vibrant-desktop/dwm
-rm config.h
-sudo make install
+RUN recompile.sh
 ```
 
 # Change themes 
