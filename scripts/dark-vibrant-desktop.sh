@@ -8,7 +8,7 @@ Exec=$HOME/.config/dark-vibrant-desktop/scripts/./autostart
 Type=Application"
 
 # Path to the .desktop file
-desktop_file_path="./"
+desktop_file_path="./dark-vibrant-desktop.desktop"
 
 # Write the content to the .desktop file
 echo "$desktop_file_content" > "$desktop_file_path"
