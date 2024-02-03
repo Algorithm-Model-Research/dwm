@@ -3,6 +3,7 @@ sudo apt-get install x11-xserver-utils &&
 sudo apt install build-essential libx11-dev libxinerama-dev sharutils libxft-dev &&
 
 cp -r ../dark-vibrant-desktop ~/.config/ &&
+rm -rf ~/.config/dark-vibrant-desktop/.git/ &&
 sudo cp ~/.config/dark-vibrant-desktop/scripts/dark-vibrant-desktop.desktop /usr/share/xsessions/ &&
 cp -r ~/.config/dark-vibrant-desktop/fronts/ ~/.local/share/fonts && 
 cd ~/.config/dark-vibrant-desktop/dwm &&
