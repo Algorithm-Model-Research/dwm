@@ -5,6 +5,7 @@ sudo apt-get install libimlib2-dev &&
 
 rm -rf ~/.config/dark-vibrant-desktop/ &&
 cp -r ../dark-vibrant-desktop ~/.config/ &&
+mv ~/.config/dark-vibrant-desktop/eww ~/.config/
 rm -rf ~/.config/dark-vibrant-desktop/.git/ &&
 cd ~/.config/dark-vibrant-desktop/scripts/ &&
 ./dark-vibrant-desktop.sh &&
