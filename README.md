@@ -1,4 +1,4 @@
-# dwm (Initial look)
+# Dark Vibrant Desktop
 
 <img src="https://github.com/siduck/chadwm/blob/screenshots/screenshots/initial_look.png">
 <img src="https://github.com/siduck/chadwm/blob/screenshots/screenshots/col_layout.png">
@@ -28,54 +28,15 @@ https://user-images.githubusercontent.com/59060246/128050994-17f46934-6604-4430-
 # Setup 
 
 ```
-git clone https://github.com/RonaldsonBellande/dwm
-sudo apt-get install -y xbacklight
-sudo apt-get install x11-xserver-utils
-
-sudo apt install build-essential libx11-dev libxinerama-dev sharutils libxft-dev
-mv dwm ~/.config
-cd ~/.config/dwm/dwm
-sudo make install
+RUN setup.sh
 ```
-- copy the stuff from fonts folder to your ~/.local/share/fonts 
-- autostart script in the scripts dir is just an example one so it must be adjusted for your liking!
-
-# Run chadwm
-
-Run the autostart file from .xinitrc
-
-(.xinitrc file)
-```
-#!/bin/sh
-
-exec ~/.config/dwm/scripts/./autostart
-```
-OR
-
-Create a desktop entry 
-
-```
-touch /usr/share/xsessions/dwm.desktop  
-```
-
-```
-[Desktop Entry]
-Name=dwm
-Comment=dwm made different
-Exec= ~/.config/dwm/scripts/./autostart 
-Type=Application 
-```
-
-- [wallpaper](https://github.com/siduck/chadwm/blob/screenshots/screenshots/chad.png)
 
 # Recompile 
 
 - You need to recompile dwm after every change you make in its src code 
 
 ```
-cd ~/.config/dwm/dwm
-rm config.h
-sudo make install
+RUN recompile.sh
 ```
 
 # Change themes 
@@ -86,9 +47,7 @@ sudo make install
 
 # Credits 
 
-- HUGE THANKS to [eProTaLT83](https://www.reddit.com/user/eProTaLT83). I wanted certain features in dwm like tabbar in monocle , tagpreview etc and he implemented my ideas and created patches for me! I cant even count the number of times he has helped me :v 
-- @fitrh helped with [colorful tag patch](https://github.com/fitrh/dwm/issues/1)
-- [6gk](https://github.com/6gk/fet.sh), eww's pure posix fetch functions taken from here
+- Credit to [siduck](https://github.com/siduck/chadwm)
 
 # Patches
 

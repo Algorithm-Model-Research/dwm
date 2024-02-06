@@ -1,5 +1,3 @@
 #!/bin/sh
 
-xbacklight -set 5 &
-feh --bg-fill /home/ronaldsonbellande-hplaptop/Pictures/universe.png &
-/home/ronaldsonbellande-hplaptop/.config/dwm/scripts/./bar.sh & dwm
+xbacklight -set 5 & feh --bg-fill ~/.config/dark-vibrant-desktop/scripts/universe.png & ~/.config/dark-vibrant-desktop/scripts/./bar.sh & dwm
